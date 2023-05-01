@@ -1,5 +1,8 @@
 # Contentstack Marketplace App Boilerplate
 
+- CustomFieldWithModal
+An exmaple of a custom field that opens a modal dialog box for item selection from a table
+
 ## Provider
 
 `<MarketplaceAppProvider>`
