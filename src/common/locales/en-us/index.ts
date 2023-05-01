@@ -24,8 +24,21 @@ const localeTexts = {
     title: "Custom Field",
     body: "This is the iframe that contains your custom field <br /> Build your app now",
     button: {
+      btnText: "Choose Item(s)",
       learnMore: "Learn more",
     },
+    assetCard: {
+      hoverActions: {
+        preview: "Preview",
+        platformRedirect: `Open In {rootConfig?.damEnv?.DAM_APP_NAME}`,
+        remove: "Delete",
+        drag: "Drag",
+      },
+    },
+    ItemsNotAddedText: "No items have been added",
+  },
+  Warnings: {
+    incorrectConfig: `The credentials you entered for the {rootConfig?.damEnv?.DAM_APP_NAME} App" are invalid or missing. Please update the configuration details and try again.`,
   },
   DashboardWidget: {
     title: "Dashboard Widget",
@@ -40,6 +53,15 @@ const localeTexts = {
     button: {
       learnMore: "Learn more",
     },
+  },
+  SelectorPage: {
+    title: `Select Items Extension`,
+  },
+  DeleteModal: {
+    header: "Delete",
+    body: "This will delete <b>&apos;$&apos;</b> permanently.",
+    cancelButton: "Cancel",
+    confirmButton: "Delete",
   },
 };
 

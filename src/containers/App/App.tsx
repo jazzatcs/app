@@ -11,7 +11,8 @@ import { CustomFieldExtensionProvider } from "../../common/providers/CustomField
  * This will ensure the bundle contains only the core code and respective route bundle
  * improving the page load time
  */
-const CustomFieldExtension = React.lazy(() => import("../CustomField/CustomField"));
+const MyCustomFieldExtension = React.lazy(() => import("../MyCustomField/MyCustomField"));
+const CustomFieldWithModalExtension = React.lazy(() => import("../CustomFieldWithModal/CustomFieldWithModal"));
 const EntrySidebarExtension = React.lazy(() => import("../SidebarWidget/EntrySidebar"));
 const AppConfigurationExtension = React.lazy(() => import("../ConfigScreen/AppConfiguration"));
 const AssetSidebarExtension = React.lazy(() => import("../AssetSidebarWidget/AssetSidebar"));
@@ -30,7 +31,17 @@ function App() {
             element={
               <Suspense>
                 <CustomFieldExtensionProvider>
-                  <CustomFieldExtension />
+                  <MyCustomFieldExtension />
+                </CustomFieldExtensionProvider>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/custom-field-with-modal"
+            element={
+              <Suspense>
+                <CustomFieldExtensionProvider>
+                  <CustomFieldWithModalExtension />
                 </CustomFieldExtensionProvider>
               </Suspense>
             }
