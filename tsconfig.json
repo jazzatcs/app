@@ -27,5 +27,5 @@
   "include": [
     "src",
     "e2e"
-, "sandbox/TestTable.jsx", "sandbox/SelectorPage.tsx"  ]
+ ]
 }
